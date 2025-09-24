@@ -17,7 +17,7 @@ const EmployeeCard = ({ employee, onDelete, onSelect, selected }) => {
 
       {/* Avatar */}
       
-      <section className="flex flex-row items-center justify-start ml-5 gap-5">
+      <section className="flex-1 md:flex-col md:ml-0  flex flex-row items-center justify-start ml-5 gap-5  ">
       <div  className="w-12 h-12  bg-gray-200 rounded-full flex items-center justify-center  text-gray-600 text-lg font-bold "
         onClick={() => navigate(`/employee/${employee.id}`, { state: { employee } })} >
 
@@ -29,7 +29,7 @@ const EmployeeCard = ({ employee, onDelete, onSelect, selected }) => {
 
       <section className="flex items-center gap-5 justify-start"> 
       <h2
-        className="text-lg font-semibold text-gray-900 truncate text-center cursor-pointer"
+        className=" md:truncate md:w-7 text-lg font-semibold text-gray-900 truncate text-center cursor-pointer"
         onClick={() =>
           navigate(`/employee/${employee.id}`, { state: { employee } })
         }
