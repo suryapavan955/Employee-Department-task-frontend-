@@ -29,7 +29,7 @@ const EmployeeCard = ({ employee, onDelete, onSelect, selected }) => {
 
       <section className="flex items-center gap-5 justify-start"> 
       <h2
-        className=" md:truncate md:w-7 text-lg font-semibold text-gray-900 truncate text-center cursor-pointer"
+        className=" md:truncate  text-lg font-semibold text-gray-900 truncate text-center cursor-pointer"
         onClick={() =>
           navigate(`/employee/${employee.id}`, { state: { employee } })
         }
